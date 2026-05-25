@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Pagina nu a fost găsită | Chess MD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♟️</text></svg>">
+  <style>
+    :root {
+      --color-beige: #f5f0e8;
+      --color-gold:  #b8973a;
+      --color-dark:  #1a1a1a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--color-dark);
+      color: var(--color-beige);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background-image: repeating-conic-gradient(rgba(184,151,58,0.05) 0% 25%, transparent 0% 50%);
+      background-size: 60px 60px;
+    }
+    .error__piece   { font-size: 5rem; margin-bottom: 1rem; }
+    .error__code    { font-family: 'Playfair Display', serif; font-size: 8rem; color: var(--color-gold); line-height: 1; }
+    .error__title   { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 1rem 0 0.5rem; }
+    .error__text    { color: #a09880; margin-bottom: 2rem; }
+    .error__btn {
+      display: inline-block;
+      background: var(--color-gold);
+      color: var(--color-dark);
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .error__btn:hover { background: #d4af5a; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="error__piece">♟</div>
+    <div class="error__code">404</div>
+    <h1 class="error__title">Pagina nu a fost găsită</h1>
+    <p class="error__text">Această mutare nu există pe tabla noastră de șah.</p>
+    <a href="index.html" class="error__btn">← Înapoi la Acasă</a>
+  </div>
+</body>
+</html>
